@@ -61,9 +61,4 @@ jobs:
           draft: false
           body: ${{ github.event.head_commit.message }}
           files: ${{ steps.sign_app.outputs.signedReleaseFile }}
-          name: ${{ github.run_number }} 
-
-          
-        
-        
-     
+          name: ${{ github.run_number }}
