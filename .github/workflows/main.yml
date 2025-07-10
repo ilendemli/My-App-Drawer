@@ -30,6 +30,12 @@ jobs:
         run: | 
             pwd
             ls -la app/build/outputs/apk/release 
+            
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: app/build/outputs/apk/release/
 
       - name: Setup build tool version variable
         shell: bash
